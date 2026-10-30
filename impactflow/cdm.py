@@ -47,8 +47,7 @@ class CausalDecisionModel:
 
     @property
     def external_names(self) -> list[str]:
-        levers = self.levers
-        return [lever.name for lever in levers]
+        return [external.name for external in self.externals]
 
     @property
     def fidelity(self):
